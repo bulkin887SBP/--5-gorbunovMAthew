@@ -1,0 +1,45 @@
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+//билет номер 5
+//    6. нужно использовать javascript 
+//    1. строительный блок приложеий состоящий как 1 файл
+//    8. находятся в строке : типы значений находятся в int float bool, ссылочные типы в string
+//    3. работает путем сравнения одного выражения с несколькими констат. значениями
+//    9. нужна для описания сложности алгоритма асимптотическая сложнорсть-нотация
+//    4. для перебора элементов массива,когда просто нужно выполнить действие
+//   10. для обработок ошибок в коде
+//    5. метод передается сслыкой на саму переменную
+//    7. сокращенный ситаксис в C# и других языках
+//    2. когда тип переменной определяется автамотически компилятором
+//номер 11 :
+
+
+
+using System;
+using System.Collections.Generetic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int>();
+        {  numbers.Add(1); }
+        var result = GetNumbersAboveAverage(numbers);
+        Console.WriteLine("Числа больше среднего значения");
+        foreach (var number in result)
+        {
+            Console.WriteLine(number);
+        }
+        {
+            static IEnumerable<int> GetNumbersAboveAverage(List<int> numbers);
+            {
+                double average = numbers.Average();
+                return numbers.Where(n => n > average);
+            }
+
+        }
+        
+     
+    }
+}
